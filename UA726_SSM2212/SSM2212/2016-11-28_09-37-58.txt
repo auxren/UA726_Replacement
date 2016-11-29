@@ -1,0 +1,73 @@
+# Created by Ultra Librarian Lite 8.1.204 Copyright © 1999-2016
+# Ultra Librarian Free Reader, Accelerated-Designs Inc.
+
+StartFootprints
+
+Footprint (Name "R_8")
+Pad (Name "1") (Location -93, 75) (Surface True) (Rotation 0) (ExpandMask 0)
+PadShape (Size 86, 22) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "2") (Location -93, 25) (Surface True) (Rotation 0) (ExpandMask 0)
+PadShape (Size 86, 22) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "3") (Location -93, -25) (Surface True) (Rotation 0) (ExpandMask 0)
+PadShape (Size 86, 22) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "4") (Location -93, -75) (Surface True) (Rotation 0) (ExpandMask 0)
+PadShape (Size 86, 22) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "5") (Location 93, -75) (Surface True) (Rotation 0) (ExpandMask 0)
+PadShape (Size 86, 22) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "6") (Location 93, -25) (Surface True) (Rotation 0) (ExpandMask 0)
+PadShape (Size 86, 22) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "7") (Location 93, 25) (Surface True) (Rotation 0) (ExpandMask 0)
+PadShape (Size 86, 22) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "8") (Location 93, 75) (Surface True) (Rotation 0) (ExpandMask 0)
+PadShape (Size 86, 22) (Shape Rectangular) (Layer Top)
+EndPad
+Arc (Width 0) (Radius 12) (Location 0, 98.5) (StartAngle 180) (EndAngle 360) (Layer Mechanical13) 
+Text (Location -103, 142) (Height 50) (Width 3) (Rotation 0) (Layer Mechanical13) (Value "*")
+Text (Location 0, 0) (Height 50) (Width 3) (Rotation 0) (Layer Mechanical13) (Value "RefDes2")
+Line (Width 6) (Start -146, -108.5) (End -146, 108.5) (Layer Mechanical15) 
+Line (Width 6) (Start -146, 108.5) (End 146, 108.5) (Layer Mechanical15) 
+Line (Width 6) (Start 146, 108.5) (End 146, -108.5) (Layer Mechanical15) 
+Line (Width 6) (Start 146, -108.5) (End -146, -108.5) (Layer Mechanical15) 
+Polygon (PointCount 4) (Layer Mechanical15) 
+Point (-146, -108.5)
+Point (-146, 108.5)
+Point (146, 108.5)
+Point (146, -108.5)
+EndPolygon
+Line (Width 6) (Start -46.42928579, -98.5) (End 46.42928579, -98.5) (Layer TopOverlay) 
+Line (Width 6) (Start 46.42928579, 98.5) (End -46.42928579, 98.5) (Layer TopOverlay) 
+Arc (Width 6) (Radius 12) (Location 0, 98.5) (StartAngle 180) (EndAngle 360) (Layer TopOverlay) 
+Text (Location -103, 142) (Height 50) (Width 3) (Rotation 0) (Layer TopOverlay) (Value "*")
+Text (Location 0, 0) (Height 50) (Width 3) (Rotation 0) (Layer TopOverlay) (Value "PN")
+Text (Location 0, 0) (Height 50) (Width 3) (Rotation 0) (Layer TopOverlay) (Value "DEV")
+Text (Location 0, 0) (Height 50) (Width 3) (Rotation 0) (Layer TopOverlay) (Value "VAL")
+Text (Location 0, 0) (Height 50) (Width 3) (Rotation 0) (Layer TopOverlay) (Value "TOL")
+Step (Name R_8.stp)
+EndFootprint
+EndFootprints
+
+StartComponents
+
+Component (Name "SSM2212RZ") (PartCount 1) (DesPrefix "U?")
+Pin (Location 300, 0) (Rotation 180) (PinType Passive) (Length 300) (Width 0) (Designator Visible "2") (Name Visible "B1") (PinSwap 0) (PartSwap 0) (PinSeq 1) (Part 1)
+Pin (Location 300, -200) (Rotation 180) (PinType Passive) (Length 300) (Width 0) (Designator Visible "1") (Name Visible "C1") (PinSwap 0) (PartSwap 0) (PinSeq 2) (Part 1)
+Pin (Location 300, -400) (Rotation 180) (PinType Passive) (Length 300) (Width 0) (Designator Visible "3") (Name Visible "E1") (PinSwap 0) (PartSwap 0) (PinSeq 3) (Part 1)
+Pin (Location 1900, -500) (Rotation 0) (PinType Passive) (Length 300) (Width 0) (Designator Visible "7") (Name Visible "B2") (PinSwap 0) (PartSwap 0) (PinSeq 4) (Part 1)
+Pin (Location 1900, -400) (Rotation 0) (PinType Passive) (Length 300) (Width 0) (Designator Visible "8") (Name Visible "C2") (PinSwap 0) (PartSwap 0) (PinSeq 5) (Part 1)
+Pin (Location 1900, -300) (Rotation 0) (PinType Passive) (Length 300) (Width 0) (Designator Visible "6") (Name Visible "E2") (PinSwap 0) (PartSwap 0) (PinSeq 6) (Part 1)
+Pin (Location 1900, -100) (Rotation 0) (PinType Passive) (Length 300) (Width 0) (Designator Visible "5") (Name Visible "NIC") (PinSwap 0) (PartSwap 0) (PinSeq 7) (Part 1)
+Pin (Location 1900, 0) (Rotation 0) (PinType Passive) (Length 300) (Width 0) (Designator Visible "4") (Name Visible "NIC") (PinSwap 0) (PartSwap 0) (PinSeq 8) (Part 1)
+Rectangle (Width 5) (Start 300, 200) (End 1900, -700) (Part 1)
+Parameter (Name "Value") (Location 1100, 300) (Height 82) (Rotation 0) (Justification Center) (Value "Value") (Part 1)
+Parameter (Name "Type") (Location 1100, 300) (Height 82) (Rotation 0) (Justification Center) (Value "Type") (Part 1)
+Parameter (Name "RefDes") (Location 1100, 400) (Height 82) (Rotation 0) (Justification Center) (Value "RefDes") (Part 1)
+Footprint (Name "R_8")
+EndComponent
+EndComponents
